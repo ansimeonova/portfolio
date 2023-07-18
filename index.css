@@ -1,0 +1,53 @@
+:root {
+  --primary-color: #0094c6;
+  --secondary-color: #828282;
+  --tertiary-color: #001242;
+  --text-grey: #333333;
+  background-color: antiquewhite;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  position: relative;
+  display: flex;
+  width: 1430px;
+  height: 734px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.219);
+  background-color: white;
+}
+
+.image {
+  position: relative;
+  margin-left: auto;
+  height: 442px;
+  width: 442px;
+  right: 170px;
+  top: 144px;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.226);
+}
+
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+.intro {
+  position: relative;
+  top: 265px;
+  left: 65px;
+  width: 494px;
+  height: 146px;
+  color: var(--text-grey, #333333);
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}

@@ -1,9 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        
-    </body> 
+  <head>
+    <title>Antoniya Simeonova</title>
+    <link rel="icon" id="favicon" href="/assets/icon.svg" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Static portfolio website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      // Check if the browser prefers dark mode
+      if (
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      ) {
+        const favicon = document.getElementById('favicon')
+        favicon.href = '/assets/icon-dark.svg' // Path to the dark mode favicon
+      }
+    </script>
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="intro">Hello, my name is Antoniya Simeonova</div>
+      <div class="image">
+        <img src="/assets/profilna.jpg" alt="profile-img" class="profile-img" />
+      </div>
+    </div>
+  </body>
 </html>
