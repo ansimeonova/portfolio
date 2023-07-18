@@ -1,4 +1,4 @@
-# Antonia's porfolio
+# Antonia's porftolio
 
 Hey, this is MY FIRST CODE PROJECT!
 
