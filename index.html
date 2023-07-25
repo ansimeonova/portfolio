@@ -2,17 +2,22 @@
 <html lang="en">
   <head>
     <title>Antoniya Simeonova</title>
-    <link rel="icon" id="favicon" href="/assets/icon.svg" type="image/x-icon" />
+    <link
+      rel="icon"
+      id="favicon"
+      href="./assets/icon.svg"
+      type="image/x-icon"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="Static portfolio website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Poppins:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Poppins:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./index.css" />
     <script>
       // Check if the browser prefers dark mode
       if (
@@ -20,15 +25,34 @@
         window.matchMedia('(prefers-color-scheme: dark)').matches
       ) {
         const favicon = document.getElementById('favicon')
-        favicon.href = '/assets/icon-dark.svg' // Path to the dark mode favicon
+        favicon.href = './assets/icon-dark.svg' // Path to the dark mode favicon
       }
     </script>
   </head>
   <body>
     <div class="profile-card">
-      <div class="intro">Hello, my name is Antoniya Simeonova</div>
+      <div class="header">
+        <div class="name">Antoniya Simeonova</div>
+        <div class="nav-buttons">
+          <a href="">About</a>
+          <a href="">Projects</a>
+          <a href="">Contacts</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="profession">UI/UX DESIGNER</div>
+        <div class="intro">Hello, my name is Antoniya Simeonova</div>
+        <div class="buttons">
+          <button class="resume">Resume</button>
+          <button class="linkedin">LinkedIn</button>
+        </div>
+      </div>
       <div class="image">
-        <img src="/assets/profilna.jpg" alt="profile-img" class="profile-img" />
+        <img
+          src="./assets/profilna.jpg"
+          alt="profile-img"
+          class="profile-img"
+        />
       </div>
     </div>
   </body>
