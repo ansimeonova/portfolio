@@ -72,6 +72,12 @@
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
+  transition: .2s;
+}
+
+.nav-buttons > a:hover {
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.226); */
+  color: var(--primary-color);
 }
 
 .container {
@@ -109,7 +115,7 @@
   top: 115px;
 }
 
-.buttons button {
+.buttons > button {
   display: inline-flex;
   font-family: inherit;
   font-size: 18px;
@@ -119,18 +125,30 @@
   padding: 4px 22px;
   border-radius: 8px;
   border: 2px solid var(--primary-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.247);
   cursor: pointer;
+  transition: .3s;
 }
 
 .buttons .resume {
   color: white;
   background: var(--primary-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.265);
+}
+
+.buttons .resume:hover {
+  color: var(--primary-color);
+  background: white;
 }
 
 .buttons .linkedin {
   color: var(--primary-color);
   background: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
   font-weight: 600;
   margin-left: 5px;
+}
+
+.buttons .linkedin:hover {
+  color: white;
+  background: var(--primary-color);
 }
