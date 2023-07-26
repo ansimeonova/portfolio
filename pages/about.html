@@ -5,7 +5,7 @@
     <link
       rel="icon"
       id="favicon"
-      href="./assets/icon.svg"
+      href="../assets/icon.svg"
       type="image/x-icon"
     />
     <meta charset="UTF-8" />
@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300..900&family=Poppins:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../index.css" />
     <script>
       // Check if the browser prefers dark mode
       if (
@@ -25,7 +25,7 @@
         window.matchMedia('(prefers-color-scheme: dark)').matches
       ) {
         const favicon = document.getElementById('favicon')
-        favicon.href = './assets/icon-dark.svg' // Path to the dark mode favicon
+        favicon.href = '../assets/icon-dark.svg' // Path to the dark mode favicon
       }
     </script>
   </head>
@@ -34,19 +34,28 @@
       <nav class="nav">
         <div class="name">Antoniya Simeonova</div>
         <div class="nav-buttons">
-          <a href="./pages/about.html">About</a>
+          <a href="./about.html">About</a>
           <a href="">Projects</a>
           <a href="">Contacts</a>
         </div>
       </nav>
       <section class="content">
         <div class="left-column">
-          <span class="profession">UI/UX DESIGNER</span>
-          <span class="intro">Hello, my name is Antoniya Simeonova</span>
+          <span class="about-title">About me</span>
+          <span class="about-1"
+            >My name is Antonia Simeonova and I'm a passionate artist since
+            2011. Within my designs I value simplicity, symmetry and a little
+            bit of abstractionism. Whether I'm designing portraits, logos or
+            illustrations I always strive for beauty, detail and balance.
+          </span>
+          <span class="about-2">
+            My future goal is to be part of the UI/UX world. I'm really
+            passionate to become expert one day.
+          </span>
         </div>
         <div class="image">
           <img
-            src="./assets/profilna.png"
+            src="../assets/profilna.png"
             alt="profile-img"
             class="profile-img"
           />
@@ -54,7 +63,6 @@
       </section>
       <div class="buttons">
         <button class="resume">Resume</button>
-        <button class="linkedin">LinkedIn</button>
       </div>
     </div>
   </body>

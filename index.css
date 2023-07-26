@@ -4,50 +4,36 @@
   --tertiary-color: #001242;
   --text-grey: #333333;
   --black: #001242;
-  background-color: antiquewhite;
   font-family: 'Nunito', sans-serif;
-  display: flex;
-  justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .profile-card {
-  position: relative;
-  display: flex;
   overflow: hidden;
-  width: 1430px;
+  max-width: 1350px;
+  margin: auto;
   height: 734px;
-  margin-top: 20px;
   border-radius: 20px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.219);
   background-color: white;
 }
 
-.image {
-  position: relative;
-  margin-left: auto;
-  height: 442px;
-  width: 442px;
-  right: 170px;
-  top: 144px;
-  border-radius: 50%;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.226);
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin: 90px 70px 0 70px;
 }
 
-.image .profile-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 50%;
-}
-
-.header {
-  position: absolute;
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  left: 65px;
-  width: 88%;
+  margin: 0 70px;
   height: 50px;
   border-bottom: 1px solid var(--black);
 }
@@ -72,7 +58,7 @@
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .nav-buttons > a:hover {
@@ -80,39 +66,44 @@
   color: var(--primary-color);
 }
 
-.container {
+.left-column {
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: 265px;
-  left: 65px;
-  width: 494px;
-  height: 146px;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image > .profile-img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
 }
 
 .profession {
-  position: relative;
-  bottom: 94px;
   color: var(--primary-color);
   font-size: 19.867px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+  margin-bottom: 95px;
 }
 
 .intro {
-  position: relative;
   color: var(--text-grey);
   font-size: 58px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
+  margin-bottom: 95px;
 }
 
 .buttons {
-  position: relative;
-  top: 115px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px 70px 0 70px;
 }
 
 .buttons > button {
@@ -126,7 +117,7 @@
   border-radius: 8px;
   border: 2px solid var(--primary-color);
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .buttons .resume {
@@ -136,8 +127,8 @@
 }
 
 .buttons .resume:hover {
-  color: var(--primary-color);
-  background: white;
+  background: #007095;
+  border: 2px solid #007095;
 }
 
 .buttons .linkedin {
@@ -151,4 +142,24 @@
 .buttons .linkedin:hover {
   color: white;
   background: var(--primary-color);
+}
+
+.about-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.about-1 {
+  color: var(--secondary-color);
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.about-2 {
+  color: var(--secondary-color);
+  font-size: 22px;
+  font-weight: 400;
 }
