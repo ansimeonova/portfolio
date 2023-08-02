@@ -162,6 +162,7 @@ ul li a:hover {
 
 .resume:hover {
   background-color: var(--primary-color-dark);
+  border: 2px solid var(--primary-color-dark);
 }
 
 .portfolio {
@@ -229,6 +230,11 @@ ul li a:hover {
   gap: 24px;
 }
 
+.links a img:hover {
+  border-radius: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .footer-name {
   color: var(--text-light);
   margin: 32px auto;
@@ -240,13 +246,13 @@ ul li a:hover {
 }
 
 .resume__section__container {
-  margin-top: 100px;
+  margin: 100px auto auto auto;
   min-height: 80vh;
   max-width: var(--max-width);
   padding: 1rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* gap: 10rem; */
+  gap: 10rem;
 }
 
 .resume-title {
@@ -267,8 +273,9 @@ ul li a:hover {
   margin-bottom: 8px;
 }
 
-/* .info-container {
-} */
+.info-container {
+  margin-bottom: 4rem;
+}
 
 .info-container p {
   margin-top: 25px;
@@ -276,4 +283,34 @@ ul li a:hover {
 
 .info-container p span {
   color: var(--text-light);
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: row;
+  max-width: calc(var(--max-width) - 50rem);
+  margin-bottom: 0.5rem;
+}
+
+.points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.full {
+  border: var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
+}
+
+.empty {
+  border: 1px solid var(--text-dark);
+  border-radius: 100%;
+  width: 1rem;
+  height: 1rem;
 }
