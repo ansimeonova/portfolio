@@ -184,46 +184,6 @@ ul li a:hover {
   border-radius: 100%;
 }
 
-@media (width < 750px) {
-  nav .checkbox {
-    display: block;
-  }
-
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  nav #check:checked ~ ul {
-    left: 0;
-  }
-
-  ul li a {
-    font-size: 1.25rem;
-  }
-
-  .section__container {
-    padding: 10rem 1rem 5rem 1rem;
-    text-align: center;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .image {
-    grid-area: 1/1/2/2;
-  }
-
-  .action__btns {
-    margin: auto;
-  }
-}
-
 .links {
   display: flex;
   justify-content: center;
@@ -288,7 +248,6 @@ ul li a:hover {
 .skill {
   display: flex;
   justify-content: space-between;
-  align-items: row;
   max-width: calc(var(--max-width) - 50rem);
   margin-bottom: 0.5rem;
 }
@@ -313,4 +272,62 @@ ul li a:hover {
   border-radius: 100%;
   width: 1rem;
   height: 1rem;
+}
+
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+
+  .action__btns {
+    margin: auto;
+  }
+
+  .resume__section__container {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-right {
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .resume-left {
+    text-align: center;
+  }
+
+  .skill {
+    margin: 0 auto;
+    align-items: center;
+  }
 }
