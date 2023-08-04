@@ -96,11 +96,14 @@ ul li a:hover {
   margin-top: 100px;
   min-height: 80vh;
   max-width: var(--max-width);
-  margin: 100px auto auto auto;
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
+}
+
+.projects__section__container {
+  margin-top: 100px;
 }
 
 .content {
@@ -206,7 +209,7 @@ ul li a:hover {
 }
 
 .resume__section__container {
-  margin: 100px auto auto auto;
+  margin-top: 100px;
   min-height: 80vh;
   max-width: var(--max-width);
   padding: 1rem;
@@ -272,6 +275,14 @@ ul li a:hover {
   border-radius: 100%;
   width: 1rem;
   height: 1rem;
+}
+
+.projects-title {
+  color: var(--text-dark);
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
 }
 
 @media (width < 750px) {
