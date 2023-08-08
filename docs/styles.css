@@ -6,6 +6,7 @@
   --text-dark: #25282b;
   --text-light: #828282;
   --extra-light: #faf5ff;
+  --background: #f9faff;
   --max-width: 1200px;
 }
 
@@ -20,6 +21,7 @@ a {
 }
 
 body {
+  background-color: var(--background);
   font-family: 'Nunito', sans-serif;
 }
 
@@ -100,14 +102,6 @@ ul li a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
-}
-
-.projects__section__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  place-items: center;
-  margin: 100px auto auto auto;
 }
 
 .content {
@@ -259,6 +253,20 @@ ul li a:hover {
   margin-bottom: 0.5rem;
 }
 
+.hobby {
+  display: flex;
+  justify-content: space-between;
+  max-width: calc(var(--max-width) - 50rem);
+  margin-bottom: 0.5rem;
+}
+
+.course {
+  display: flex;
+  justify-content: space-between;
+  max-width: calc(var(--max-width) - 50rem);
+  margin-bottom: 0.5rem;
+}
+
 .points {
   display: flex;
   justify-content: center;
@@ -281,13 +289,122 @@ ul li a:hover {
   height: 1rem;
 }
 
+.projects__section__container {
+  margin: 100px auto auto auto;
+  width: min(90%, 992px);
+}
+
 .projects-title {
+  color: var(--text-dark);
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.projects-title span {
+  background-color: var(--primary-color);
+  display: block;
+  margin: 0 auto;
+  height: 4px;
+  width: 15%;
+  border-radius: 2px;
+}
+
+.projects-title h1 {
   color: var(--text-dark);
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
   grid-column: span 2;
+}
+
+.project-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  border-radius: 24px;
+  background-color: white;
+  box-shadow: 0px 6px 64px 0px rgba(112, 144, 176, 0.1);
+  overflow: hidden;
+}
+
+.project-text {
+  flex: 1;
+  width: min(90%, 20rem);
+}
+
+.project-text h2 {
+  margin: 1rem 2.5rem;
+  color: var(--text-dark);
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.project-text h3 {
+  margin: 1rem 2.5rem;
+  color: var(--text-dark);
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.project-text p {
+  margin: 0 2.5rem 2rem;
+  color: var(--text-light);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.project-text a {
+  margin-left: 2.5rem;
+  padding: 8px 24px;
+  border: 1px solid var(--text-dark);
+  border-radius: 24px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--text-dark);
+}
+
+.project-img-1 {
+  height: 500px;
+  width: 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('./assets/projects-pic-1.jpg');
+}
+
+.project-img-2 {
+  height: 500px;
+  width: 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('./assets/projects-pic-2.jpg');
+}
+
+.project-img-3 {
+  height: 500px;
+  width: 100%;
+  flex: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('./assets/projects-pic-3.jpg');
 }
 
 @media (width < 750px) {
@@ -345,5 +462,37 @@ ul li a:hover {
   .skill {
     margin: 0 auto;
     align-items: center;
+  }
+
+  .hobby {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .course {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .project-element {
+    flex-direction: column;
+    height: 700px;
+  }
+
+  .project-element a {
+    display: inline-block;
+  }
+
+  .project-text {
+    width: 90%;
+    margin: 3rem 0;
+  }
+
+  .project-text h2 {
+    margin-top: 0px;
+  }
+
+  .project-text p {
+    margin-bottom: 16px;
   }
 }
