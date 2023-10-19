@@ -511,4 +511,16 @@ ul li a:hover {
     .project-text p {
         margin-bottom: 16px;
     }
+
+    div:nth-child(1 of div.project-element) {
+        height: 700px;
+    }
+
+    div:nth-child(2 of div.project-element) {
+        height: 1000px;
+    }
+
+    div:nth-child(3 of div.project-element) {
+        height: 1000px;
+    }
 }
