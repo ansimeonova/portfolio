@@ -380,7 +380,7 @@ ul li a:hover {
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
-    color: var(--text-dark);
+    color: var(--primary-color);
 }
 
 .prototype-button {
