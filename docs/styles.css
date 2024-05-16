@@ -217,81 +217,80 @@ ul li a:hover {
     min-height: 80vh;
     max-width: var(--max-width);
     padding: 1rem;
-    
 }
 
 .initials-container {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .initials {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: var(--primary-color);
-  color: var(--extra-light);
-  width: 40px;
-  height: 80px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--extra-light);
+    width: 40px;
+    height: 80px;
 }
 
 .initials span {
-  text-align: center;
-  font-weight: 900;
-  font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .resume-name {
-  font-weight: 700;
-  line-height: 48px;
-  font-size: 40px;
-  color: var(--text-dark);
-  margin-left: 20px;
+    font-weight: 700;
+    line-height: 48px;
+    font-size: 40px;
+    color: var(--text-dark);
+    margin-left: 20px;
 }
 
 .resume-about-me-header {
-  color: #AAA6A6;
-  font-weight: 800;
-  font-size: 22px;
-  line-height: 35.76px;
-  margin: 50px 0 30px;
+    color: #aaa6a6;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 35.76px;
+    margin: 50px 0 30px;
 }
 
 .resume-about-me-text {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 35.76px;
-  text-align: left;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.76px;
+    text-align: left;
 }
 
 .resume-content {
-  display: flex;
+    display: flex;
 }
 
 .resume-content > div {
-  flex: 0.5;
+    flex: 0.5;
 }
 
 .resume-content h3 {
-  margin-top: 50px;
-  margin-bottom: 10px;
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 35.76px;
-  text-align: left;
-  color: var(--primary-color);
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 35.76px;
+    text-align: left;
+    color: var(--primary-color);
 }
 
 .resume-education {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
-  margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 .resume-education-period {
-  color: var(--text-light);
+    color: var(--text-light);
 }
 
 .resume-skill-name {
@@ -527,10 +526,51 @@ ul li a:hover {
         font-size: 1.25rem;
     }
 
+    .resume-about-me-text {
+        display: block;
+        width: 92%;
+    }
+
+    .resume-content {
+        position: relative;
+        display: grid;
+        width: 100%;
+        /* overflow: auto; */
+    }
+
+    .resume-content > div {
+        overflow: auto;
+    }
+
+    .resume-content h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .resume-skill-name {
+        display: flex;
+        justify-content: center;
+    }
+
+    .resume-skill-level {
+        display: flex;
+        justify-content: center;
+    }
+
+    .resume-chips {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+
     .section__container {
         padding: 10rem 1rem 5rem 1rem;
         text-align: center;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .resume-contact {
+        display: flex;
+        justify-content: center;
     }
 
     .image {
