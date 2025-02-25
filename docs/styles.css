@@ -324,7 +324,7 @@ ul li a:hover {
 .resume-chips > div {
     background-color: var(--primary-color);
     color: var(--extra-light);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 27.81px;
     border-radius: 10px;
@@ -347,6 +347,15 @@ ul li a:hover {
 
 .resume-contact img {
     margin-right: 10px;
+}
+
+.courses {
+    color: var(--text-light);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .points {
@@ -418,10 +427,11 @@ ul li a:hover {
 .project-text {
     flex: 1;
     width: min(90%, 20rem);
+    padding: 0 2rem;
 }
 
 .project-text h2 {
-    margin: 1rem 2.5rem;
+    margin: 1rem 0;
     color: var(--text-dark);
     font-size: 39px;
     font-style: normal;
@@ -430,7 +440,7 @@ ul li a:hover {
 }
 
 .project-text h3 {
-    margin: 1rem 2.5rem;
+    margin: 1rem 0;
     color: var(--text-dark);
     font-size: 39px;
     font-style: normal;
@@ -439,7 +449,7 @@ ul li a:hover {
 }
 
 .project-text p {
-    margin: 0 2.5rem 2rem;
+    margin: 0 0 2rem;
     color: var(--text-light);
     font-size: 18px;
     font-style: normal;
@@ -448,7 +458,6 @@ ul li a:hover {
 }
 
 .project-button {
-    margin-left: 2.5rem;
     padding: 8px 24px;
     border: 1px solid var(--text-dark);
     border-radius: 24px;
@@ -457,10 +466,11 @@ ul li a:hover {
     font-weight: 700;
     line-height: 150%;
     color: var(--primary-color);
+    background-color: #ffffff;
 }
 
 .prototype-button {
-    margin-left: 2.5rem;
+    margin-left: 1rem;
     padding: 8px 24px;
     border-radius: 24px;
     font-size: 18px;
@@ -499,6 +509,43 @@ ul li a:hover {
     background-size: cover;
     background-position: center;
     background-image: url('./assets/projects-pic-3.jpg');
+}
+
+.coming-soon-baner {
+    padding: 24px;
+    border-radius: 24px;
+    background-color: #ffffff;
+    position: relative;
+    height: 33vh;
+    color: var(--primary-color);
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.coming-soon-baner::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url('./assets/preloader.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: .5;
+    margin: 24px;
+}
+
+.software-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.software-images > img {
+    height: 50px;
+    width: 50px;
+    margin-right: 8px;
 }
 
 @media (width < 750px) {
@@ -595,6 +642,7 @@ ul li a:hover {
 
     .prototype-button {
         margin-top: 1rem;
+        margin-left: 0;
     }
 
     .project-text {
@@ -620,5 +668,14 @@ ul li a:hover {
 
     div:nth-child(3 of div.project-element) {
         height: 1000px;
+    }
+
+    .coming-soon-baner {
+        height: 200px!important;
+        font-size: 40px
+    }
+
+    .project-img-3 {
+        background-size: contain;
     }
 }
