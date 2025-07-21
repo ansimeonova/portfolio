@@ -7,7 +7,7 @@
     --text-light: #828282;
     --text-extra-light: #BDBDBD;
     --contrast: #faf5ff;
-    --background: #f9faff;
+    --background: #fff;
     --max-width: 1200px;
 }
 
@@ -70,11 +70,14 @@ nav .checkbox i {
     cursor: pointer;
 }
 
+nav ul {
+    list-style: none;
+}
+
 ul {
     display: flex;
     align-items: center;
     gap: 1rem;
-    list-style: none;
     transition: left 0.3s;
 }
 
@@ -161,12 +164,6 @@ ul li a:hover {
 .resume:hover {
     background-color: var(--primary-color-dark);
     border: 2px solid var(--primary-color-dark);
-}
-
-.project-button:hover {
-    color: var(--contrast);
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
 }
 
 .portfolio {
@@ -442,7 +439,7 @@ ul li a:hover {
     line-height: 150%;
 }
 
-.project-text p {
+.project-text p, ol {
     margin: 0 0 2rem;
     color: var(--text-light);
     font-size: 18px;
@@ -451,22 +448,14 @@ ul li a:hover {
     line-height: 150%;
 }
 
-.project-button {
-    padding: 8px 24px;
-    border: 1px solid var(--text-dark);
-    border-radius: 24px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    color: var(--primary-color);
-    background-color: #ffffff;
+.project-text ol {
+    margin-left: 16px;
 }
 
 .prototype-button {
     margin-left: 1rem;
     padding: 8px 24px;
-    border-radius: 24px;
+    border-radius: 8px;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -475,27 +464,28 @@ ul li a:hover {
     background-color: var(--primary-color);
 }
 
+.project-img-0 {
+    height: 500px;
+    width: 100%;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('./assets/momenti/Momenti.svg');
+    margin-left: 16px;
+}
+
 .project-img-1 {
     height: 500px;
     width: 100%;
     flex: 1;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    background-image: url('./assets/Gecko\ board.svg');
+    background-image: url('./assets/Gecko_board.svg');
 }
 
 .project-img-2 {
-    height: 500px;
-    width: 100%;
-    flex: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url('./assets/projects-pic-2.jpg');
-}
-
-.project-img-3 {
     height: 500px;
     width: 100%;
     flex: 1;
@@ -632,6 +622,83 @@ ul li a:hover {
     margin-top: 10px;
 }
 
+.project__container {
+    margin: 78px auto auto auto;
+}
+
+.project_background_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+}
+
+.project_background_image span {
+    color: var(--background);
+    font-size: 16px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.project_background_image span:first-child {
+    left: 120px;
+}
+
+.project_background_image span:last-child {
+    right: 120px;
+}
+
+.project__container .project-text {
+    width:auto ;
+    margin-top: 80px;
+}
+
+.project__container .images_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project__container .images_container img {
+    margin: 16px 0 16px;
+}
+
+.colors_container {
+    display: flex;
+    justify-content: center;
+}
+
+.colors_container h2 {
+    margin-bottom: 32px;
+}
+
+.colors_container > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.colors_container .color_row {
+    display:  flex;
+    margin-bottom: 32px;
+}
+
+.color_row .color {
+    display: flex;
+    flex-direction: column;
+}
+
+.color_row .color div:first-child{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 16px;
+}
+
+.quote {
+    border-left: 1px solid var(--text-light);
+    padding-left: 64px;
+}
 @media (width < 750px) {
     nav .checkbox {
         display: block;
